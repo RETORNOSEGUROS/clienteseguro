@@ -1,0 +1,54 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "apolices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "clienteId", "order": "ASCENDING" },
+        { "fieldPath": "vencimento", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "apolices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "clienteId", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "indicacoes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "indicadorId", "order": "ASCENDING" },
+        { "fieldPath": "criadoEm", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "indicacoes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "indicadoId", "order": "ASCENDING" },
+        { "fieldPath": "criadoEm", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "comissoes_indicacoes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "indicadorId", "order": "ASCENDING" },
+        { "fieldPath": "criadoEm", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "negocios",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "clienteId", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "emitidoEm", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
